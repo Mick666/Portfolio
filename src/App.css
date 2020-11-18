@@ -3,10 +3,25 @@
 }
 
 .nav-sidebar-image {
-  height: 4vh;
+  height: 3vh;
 }
 
-.portfolio-items {
+.portfolio-items-parent {
   margin: 0px auto;
   width: 66vh;
+  margin-top: 100px;
+}
+
+.portfolio-item {
+  margin-bottom: 75px;
+}
+
+.image-gallery-slide img {
+  width: 400px;
+  height: 400px;
+}
+
+.fullscreen .image-gallery-slide img {
+  width: auto;
+  height: auto;
 }
