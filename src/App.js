@@ -4,6 +4,7 @@ import PortfolioItems from './components/PortfolioItem'
 import Data from './portfolioData'
 import Sidebar from './components/Sidebar'
 import About from './components/About'
+import '../node_modules/react-image-gallery/styles/css/image-gallery.css'
 
 function App() {
     const [page, setPage] = useState('projects')
@@ -11,10 +12,10 @@ function App() {
     return (
         <div className='App'>
             <Sidebar setPage={setPage} />
-            <About page={page} />
+            <About page={page === 'about'} />
             <PortfolioItems
                 data={Data}
-                page={page} />
+                page={page === 'projects'} />
         </div>
     )
 }

@@ -15,7 +15,7 @@ const PortfolioItems = ({ page, data }) => {
     if (!page) return null
 
     return (
-        <div>
+        <div className='portfolio-items'>
             {data.map((item, index) =>
                 <PortfolioItem
                     key={index}

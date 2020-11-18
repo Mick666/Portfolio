@@ -1,10 +1,26 @@
+import MP1 from './images/MPImp-1.jpg'
+import MP1Thumb from './images/MPImp-1-Thumb.jpg'
+import MP2 from './images/MPImp-2.jpg'
+import MP2Thumb from './images/MPImp-2-Thumb.jpg'
+import MP3 from './images/MPImp-3.jpg'
+import MP3Thumb from './images/MPImp-3-Thumb.jpg'
+
+
 const Data = [
     {
         title: 'Mediaportal Improvements',
         images: [
             {
-                original: 'text',
-                thumbnail: 'alsotext'
+                original: MP1,
+                thumbnail: MP1Thumb
+            },
+            {
+                original: MP2,
+                thumbnail: MP2Thumb
+            },
+            {
+                original: MP3,
+                thumbnail: MP3Thumb
             }
         ],
         text: 'A Chrome extension I created to assist with creating Daily Briefings while at iSentia. \
@@ -12,7 +28,11 @@ const Data = [
             and added several time saving features.\n The extension now has more than 30 users across three\
             teams and has been used in conjunction with the Mediaportal developers to eliminate an ongoing\
             bug we were experiencing.\n'
-    },
+    }
+]
+
+/*
+,
     {
         title: 'Pics Be Gone',
         images: [
@@ -59,6 +79,6 @@ const Data = [
         ],
         text: 'A simple calculator created with vanilla JS'
     }
-]
+    */
 
 export default Data
