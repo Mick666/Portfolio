@@ -1,7 +1,6 @@
 import React from 'react'
 
-const About = ({ page }) => {
-    if (!page) return null
+const About = () => {
 
     const aboutText = 'My name is Michael Martino and I\'m a Web Developer.\
     My passion is programming, especially when creating new ways to make people\'s lives easier (be it with\

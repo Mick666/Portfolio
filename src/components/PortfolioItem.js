@@ -12,8 +12,7 @@ const PortfolioItem = ({ item }) => {
     )
 }
 
-const PortfolioItems = ({ page, data }) => {
-    if (!page) return null
+const PortfolioItems = ({ data }) => {
 
     return (
         <div className='portfolio-items-parent'>

@@ -7,6 +7,10 @@ import About from './components/About'
 import '../node_modules/react-image-gallery/styles/css/image-gallery.css'
 import { Drawer, AppBar, Toolbar, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
+import {
+    BrowserRouter as Router,
+    Switch, Route
+} from 'react-router-dom'
 
 const drawerWidth = 240
 const useStyles = makeStyles((theme) => ({
@@ -34,11 +38,10 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 function App() {
-    const [page, setPage] = useState('projects')
     const classes = useStyles()
 
     return (
-        <div className='App'>
+        <Router className='App'>
             <AppBar position="fixed" className={classes.appBar}>
                 <Toolbar>
                     <Typography variant="h6" noWrap>
@@ -55,13 +58,19 @@ function App() {
                 anchor="left"
             >
                 <div className={classes.toolbar} />
-                <Sidebar setPage={setPage} />
+                <Sidebar />
             </Drawer>
-            <About page={page === 'about'} />
-            <PortfolioItems
-                data={Data}
-                page={page === 'projects'} />
-        </div>
+            <Switch>
+                <Route path='/about'>
+                    <About />
+                </Route>
+                <Route path='/'>
+                    <PortfolioItems
+                        data={Data}
+                    />
+                </Route>
+            </Switch>
+        </Router>
     )
 }
 
