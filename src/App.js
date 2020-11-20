@@ -16,6 +16,7 @@ const drawerWidth = 240
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
+        textAlign: 'center'
     },
     appBar: {
         width: `calc(100% - ${drawerWidth}px)`,
@@ -41,7 +42,7 @@ function App() {
     const classes = useStyles()
 
     return (
-        <Router className='App'>
+        <Router className={classes.root}>
             <AppBar position="fixed" className={classes.appBar}>
                 <Toolbar>
                     <Typography variant="h6" noWrap>

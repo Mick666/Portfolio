@@ -7,7 +7,9 @@ const PortfolioItem = ({ item }) => {
             <h1>{item.title}</h1>
             <ImageGallery items={item.images} />
             <p className='item-text'>{item.text}</p>
-            <a href={item.live}>Live</a> | <a href={item.source}>Source</a>
+            <div className='portfolio-links'>
+                <a href={item.live}>Live</a> | <a href={item.source}>Source</a>
+            </div>
         </div>
     )
 }
