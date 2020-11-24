@@ -5,14 +5,23 @@ import MP2Thumb from './images/MPImp-2-Thumb.jpg'
 import MP3 from './images/MPImp-3.jpg'
 import MP3Thumb from './images/MPImp-3-Thumb.jpg'
 import Pics1 from './images/Pics1.jpg'
+import Pics1Thumb from './images/Pics1-Thumb.jpg'
 import Pics2 from './images/Pics2.jpg'
+import Pics2Thumb from './images/Pics2-Thumb.jpg'
 import Pics3 from './images/Pics3.jpg'
+import Pics3Thumb from './images/Pics3-Thumb.jpg'
 import Pics4 from './images/Pics4.jpg'
+import Pics4Thumb from './images/Pics4-Thumb.jpg'
 import Linker1 from './images/Linker1.jpg'
+import Linker1Thumb from './images/Linker1-Thumb.jpg'
+import Linker2Thumb from './images/Linker2-Thumb.jpg'
 import Linker2 from './images/Linker2.jpg'
 import Commands1 from './images/Commands1.jpg'
+import Commands1Thumb from './images/Commands1-Thumb.jpg'
+import Commands2Thumb from './images/Commands2-Thumb.jpg'
 import Commands2 from './images/Commands2.jpg'
 import Calc1 from './images/Calc1.jpg'
+import Calc1Thumb from './images/Calc1-Thumb.jpg'
 
 
 const Data = [
@@ -45,19 +54,19 @@ const Data = [
         images: [
             {
                 original: Pics1,
-                thumbnail: MP1Thumb
+                thumbnail: Pics1Thumb
             },
             {
                 original: Pics2,
-                thumbnail: MP2Thumb
+                thumbnail: Pics2Thumb
             },
             {
                 original: Pics3,
-                thumbnail: MP3Thumb
+                thumbnail: Pics3Thumb
             },
             {
                 original: Pics4,
-                thumbnail: MP3Thumb
+                thumbnail: Pics4Thumb
             }
         ],
         text: 'A simpler Chrome extension I made to assist with productivity during a cybersecurity incident\
@@ -72,11 +81,11 @@ const Data = [
         images: [
             {
                 original: Linker1,
-                thumbnail: MP1Thumb
+                thumbnail: Linker1Thumb
             },
             {
                 original: Linker2,
-                thumbnail: MP1Thumb
+                thumbnail: Linker2Thumb
             }
         ],
         text: 'A website designed to assist with linking news summaries when using our online editing tool.\
@@ -87,11 +96,11 @@ const Data = [
         images: [
             {
                 original: Commands1,
-                thumbnail: MP1Thumb
+                thumbnail: Commands1Thumb
             },
             {
                 original: Commands2,
-                thumbnail: MP1Thumb
+                thumbnail: Commands2Thumb
             }
         ],
         text: 'A React website I created to list the common npm packages for various JS libraries, as well as other \
@@ -103,7 +112,7 @@ const Data = [
         images: [
             {
                 original: Calc1,
-                thumbnail: MP1Thumb
+                thumbnail: Calc1Thumb
             }
         ],
         text: 'A simple calculator created with vanilla JS'

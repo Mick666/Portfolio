@@ -30,12 +30,7 @@ const useStyles = makeStyles((theme) => ({
         width: drawerWidth,
     },
     // necessary for content to be below app bar
-    toolbar: theme.mixins.toolbar,
-    content: {
-        flexGrow: 1,
-        backgroundColor: theme.palette.background.default,
-        padding: theme.spacing(3),
-    },
+    toolbar: theme.mixins.toolbar
 }))
 
 function App() {
