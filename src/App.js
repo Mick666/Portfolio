@@ -30,42 +30,51 @@ const useStyles = makeStyles((theme) => ({
         width: drawerWidth,
     },
     // necessary for content to be below app bar
-    toolbar: theme.mixins.toolbar
+    toolbar: theme.mixins.toolbar,
+    content: {
+        flexGrow: 1,
+        padding: theme.spacing(3),
+    }
 }))
 
 function App() {
     const classes = useStyles()
 
     return (
-        <Router className={classes.root}>
-            <AppBar position="fixed" className={classes.appBar}>
-                <Toolbar>
-                    <Typography variant="h6" noWrap>
-                        Michael Martino&apos;s Portfolio
-                    </Typography>
-                </Toolbar>
-            </AppBar>
-            <Drawer
-                className={classes.drawer}
-                variant="permanent"
-                classes={{
-                    paper: classes.drawerPaper,
-                }}
-                anchor="left"
-            >
-                <div className={classes.toolbar} />
-                <Sidebar />
-            </Drawer>
-            <Switch>
-                <Route path='/about'>
-                    <About />
-                </Route>
-                <Route path='/'>
-                    <PortfolioItems
-                        data={Data}
-                    />
-                </Route>
-            </Switch>
+        <Router>
+            <div className={classes.root}>
+                <AppBar position="fixed" className={classes.appBar}>
+                    <Toolbar>
+                        <Typography variant="h6" noWrap>
+                            Michael Martino&apos;s Portfolio
+                        </Typography>
+                    </Toolbar>
+                </AppBar>
+                <Drawer
+                    className={classes.drawer}
+                    variant="permanent"
+                    classes={{
+                        paper: classes.drawerPaper,
+                    }}
+                    anchor="left"
+                >
+                    <div className={classes.toolbar} />
+                    <Sidebar />
+                </Drawer>
+                <main className={classes.content}>
+                    <div className={classes.toolbar} />
+                    <Switch>
+                        <Route path='/about'>
+                            <About />
+                        </Route>
+                        <Route path='/'>
+                            <PortfolioItems
+                                data={Data}
+                            />
+                        </Route>
+                    </Switch>
+                </main>
+            </div>
         </Router>
     )
 }
