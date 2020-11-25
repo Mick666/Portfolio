@@ -46,8 +46,8 @@ const Data = [
             and added several time saving features.\n The extension now has more than 30 users across three\
             teams and has been used in conjunction with the Mediaportal developers to eliminate an ongoing\
             bug we were experiencing.\n',
-        live: 'google.com',
-        source: 'google.com'
+        live: 'https://chrome.google.com/webstore/detail/mp-improvements/fehdcpnecldplanhfcmhcanpagpmljmo',
+        source: 'https://github.com/Mick666/Media-Plugin'
     },
     {
         title: 'Pics Be Gone',
@@ -73,8 +73,8 @@ const Data = [
         at iSentia, which trims down the websites of the national and capital city daily websites. \
         The extension removes all visual elements in a story and prefixes the first paragraph with\
         metadata needed to create a full text PDF of the article',
-        live: 'google.com',
-        source: 'google.com'
+        live: 'https://chrome.google.com/webstore/detail/pictures-be-gone/nenokcimcmfhbiagecnldfihogiebfde',
+        source: 'https://github.com/Mick666/Pics-be-gone'
     },
     {
         title: 'Summary Linker',
@@ -89,7 +89,9 @@ const Data = [
             }
         ],
         text: 'A website designed to assist with linking news summaries when using our online editing tool.\
-        Created with React.'
+        Created with React.',
+        live: 'https://mick666.github.io/Summs-Linker-Redux/',
+        source: 'https://github.com/Mick666/Summs-Linker-Redux'
     },
     {
         title: 'Programming commands',
@@ -105,7 +107,9 @@ const Data = [
         ],
         text: 'A React website I created to list the common npm packages for various JS libraries, as well as other \
         command lines I infrequently need. Powered by Node on the server side, which stores the various commands \
-        and their contexts'
+        and their contexts',
+        live: 'https://warm-chamber-58678.herokuapp.com/',
+        source: 'https://github.com/Mick666/Commands-Frontend'
     },
     {
         title: 'Calculator',
@@ -115,7 +119,9 @@ const Data = [
                 thumbnail: Calc1Thumb
             }
         ],
-        text: 'A simple calculator created with vanilla JS'
+        text: 'A simple calculator created with vanilla JS',
+        live: 'https://mick666.github.io/calculatorProject/',
+        source: 'https://github.com/Mick666/calculatorProject'
     }
 ]
 
