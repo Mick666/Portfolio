@@ -4,14 +4,20 @@ import MP2 from './images/MPImp-2.jpg'
 import MP2Thumb from './images/MPImp-2-Thumb.jpg'
 import MP3 from './images/MPImp-3.jpg'
 import MP3Thumb from './images/MPImp-3-Thumb.jpg'
-import Pics1 from './images/Pics1.jpg'
-import Pics1Thumb from './images/Pics1-Thumb.jpg'
-import Pics2 from './images/Pics2.jpg'
-import Pics2Thumb from './images/Pics2-Thumb.jpg'
-import Pics3 from './images/Pics3.jpg'
-import Pics3Thumb from './images/Pics3-Thumb.jpg'
-import Pics4 from './images/Pics4.jpg'
-import Pics4Thumb from './images/Pics4-Thumb.jpg'
+import MP4 from './images/MPImp-4.jpg'
+import MP4Thumb from './images/MPImp-4-Thumb.jpg'
+import MP5 from './images/MPImp-5.jpg'
+import MP5Thumb from './images/MPImp-4-Thumb.jpg'
+import Aghs1 from './images/Aghs1.jpg'
+import Aghs1Thumb from './images/Aghs1-Thumb.jpg'
+import Aghs2 from './images/Aghs2.jpg'
+import Aghs2Thumb from './images/Aghs2-Thumb.jpg'
+import Aghs3 from './images/Aghs3.jpg'
+import Aghs3Thumb from './images/Aghs3-Thumb.jpg'
+import Aghs4 from './images/Aghs4.jpg'
+import Aghs4Thumb from './images/Aghs4-Thumb.jpg'
+import Aghs5 from './images/Aghs5.jpg'
+import Aghs5Thumb from './images/Aghs5-Thumb.jpg'
 import Linker1 from './images/Linker1.jpg'
 import Linker1Thumb from './images/Linker1-Thumb.jpg'
 import Linker2Thumb from './images/Linker2-Thumb.jpg'
@@ -26,8 +32,48 @@ import Calc1Thumb from './images/Calc1-Thumb.jpg'
 
 const Data = [
     {
+        title: 'Aghanim\'s Pathfinders Guides',
+        images: [
+            {
+                original: Aghs1,
+                thumbnail: Aghs1Thumb
+            },
+            {
+                original: Aghs2,
+                thumbnail: Aghs2Thumb
+            },
+            {
+                original: Aghs3,
+                thumbnail: Aghs3Thumb
+            },
+            {
+                original: Aghs4,
+                thumbnail: Aghs4Thumb
+            },
+            {
+                original: Aghs5,
+                thumbnail: Aghs5Thumb
+            }
+        ],
+        text: 'A website for a popular mod for Dota 2, Aghanim’s Pathfinders. The mod re-adds a PvE mode\
+        the game featured recently; the site hosts guides for the various heroes, covering itemisation, \
+        levelling and shards (permanent upgrades for your hero). The website was created with React and \
+        styled with CSS3. The backend is powered by Node.JS and GraphQL and the data is hosted on MongoDB. \
+        As this is a recent creation of mine, many heroes are missing guides at the moment.',
+        live: 'https://mick666.github.io/aghs-pathfinders-guides/',
+        source: 'https://github.com/Mick666/aghs-pathfinders-guides'
+    },
+    {
         title: 'Mediaportal Improvements',
         images: [
+            {
+                original: MP4,
+                thumbnail: MP4Thumb
+            },
+            {
+                original: MP5,
+                thumbnail: MP5Thumb
+            },
             {
                 original: MP1,
                 thumbnail: MP1Thumb
@@ -48,33 +94,6 @@ const Data = [
             bug we were experiencing.\n',
         live: 'https://chrome.google.com/webstore/detail/mp-improvements/fehdcpnecldplanhfcmhcanpagpmljmo',
         source: 'https://github.com/Mick666/Media-Plugin'
-    },
-    {
-        title: 'Pics Be Gone',
-        images: [
-            {
-                original: Pics1,
-                thumbnail: Pics1Thumb
-            },
-            {
-                original: Pics2,
-                thumbnail: Pics2Thumb
-            },
-            {
-                original: Pics3,
-                thumbnail: Pics3Thumb
-            },
-            {
-                original: Pics4,
-                thumbnail: Pics4Thumb
-            }
-        ],
-        text: 'A simpler Chrome extension I made to assist with productivity during a cybersecurity incident\
-        at iSentia, which trims down the websites of the national and capital city daily websites. \
-        The extension removes all visual elements in a story and prefixes the first paragraph with\
-        metadata needed to create a full text PDF of the article',
-        live: 'https://chrome.google.com/webstore/detail/pictures-be-gone/nenokcimcmfhbiagecnldfihogiebfde',
-        source: 'https://github.com/Mick666/Pics-be-gone'
     },
     {
         title: 'Summary Linker',
