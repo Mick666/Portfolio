@@ -60,7 +60,7 @@ const Data = [
         levelling and shards (permanent upgrades for your hero). The website was created with React and \
         styled with CSS3. The backend is powered by Node.JS and GraphQL and the data is hosted on MongoDB. \
         As this is a recent creation of mine, many heroes are missing guides at the moment.',
-        live: 'https://mick666.github.io/aghs-pathfinders-guides/',
+        live: 'https://aghs-pathfinder-guides.herokuapp.com/',
         source: 'https://github.com/Mick666/aghs-pathfinders-guides'
     },
     {
