@@ -24,7 +24,7 @@ const PortfolioItem = ({ item }) => {
     return (
         <div className='portfolio-item'>
             <h1>{item.title}</h1>
-            <ImageGallery items={item.images} />
+            <ImageGallery items={item.images} additionalClass='testing' />
             <Typography className={classes.textSection}>{item.text}</Typography>
             <div className='portfolio-links'>
                 <Link href={item.live} className={classes.projectLinks}>Live</Link>&nbsp;|&nbsp;

@@ -18,6 +18,8 @@ import Aghs4 from './images/Aghs4.jpg'
 import Aghs4Thumb from './images/Aghs4-Thumb.jpg'
 import Aghs5 from './images/Aghs5.jpg'
 import Aghs5Thumb from './images/Aghs5-Thumb.jpg'
+import Aghs6 from './images/Aghs6.jpg'
+import Aghs6Thumb from './images/Aghs6-Thumb.jpg'
 import Linker1 from './images/Linker1.jpg'
 import Linker1Thumb from './images/Linker1-Thumb.jpg'
 import Linker2Thumb from './images/Linker2-Thumb.jpg'
@@ -36,23 +38,33 @@ const Data = [
         images: [
             {
                 original: Aghs1,
-                thumbnail: Aghs1Thumb
+                thumbnail: Aghs1Thumb,
+                originalClass: 'aghs-images',
             },
             {
                 original: Aghs2,
-                thumbnail: Aghs2Thumb
+                thumbnail: Aghs2Thumb,
+                originalClass: 'aghs-images',
             },
             {
                 original: Aghs3,
-                thumbnail: Aghs3Thumb
+                thumbnail: Aghs3Thumb,
+                originalClass: 'aghs-images',
             },
             {
                 original: Aghs4,
-                thumbnail: Aghs4Thumb
+                thumbnail: Aghs4Thumb,
+                originalClass: 'aghs-images',
             },
             {
                 original: Aghs5,
-                thumbnail: Aghs5Thumb
+                thumbnail: Aghs5Thumb,
+                originalClass: 'aghs-images',
+            },
+            {
+                original: Aghs6,
+                thumbnail: Aghs6Thumb,
+                originalClass: 'aghs-images',
             }
         ],
         text: 'A website for a popular mod for Dota 2, Aghanim’s Pathfinders. The mod re-adds a PvE mode\
@@ -61,30 +73,35 @@ const Data = [
         styled with CSS3. The backend is powered by Node.JS and GraphQL and the data is hosted on MongoDB. \
         As this is a recent creation of mine, many heroes are missing guides at the moment.',
         live: 'https://aghs-pathfinder-guides.herokuapp.com/',
-        source: 'https://github.com/Mick666/aghs-pathfinders-guides'
+        source: 'https://github.com/Mick666/aghs-pathfinders-guides',
     },
     {
         title: 'Mediaportal Improvements',
         images: [
             {
                 original: MP4,
-                thumbnail: MP4Thumb
+                thumbnail: MP4Thumb,
+                originalClass: 'mpimp-images',
             },
             {
                 original: MP5,
-                thumbnail: MP5Thumb
+                thumbnail: MP5Thumb,
+                originalClass: 'mpimp-images',
             },
             {
                 original: MP1,
-                thumbnail: MP1Thumb
+                thumbnail: MP1Thumb,
+                originalClass: 'mpimp-images',
             },
             {
                 original: MP2,
-                thumbnail: MP2Thumb
+                thumbnail: MP2Thumb,
+                originalClass: 'mpimp-images',
             },
             {
                 original: MP3,
-                thumbnail: MP3Thumb
+                thumbnail: MP3Thumb,
+                originalClass: 'mpimp-images',
             }
         ],
         text: 'A Chrome extension I created to assist with creating Daily Briefings while at iSentia. \

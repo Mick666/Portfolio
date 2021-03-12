@@ -20,6 +20,15 @@
   height: 400px;
 }
 
+div.aghs-images div img{
+  width: 730px !important;
+  height: 600px !important;
+}
+
+div.mpimp-images div img{
+  width: 730px !important;
+}
+
 .fullscreen .image-gallery-slide img {
   width: auto;
   height: auto;
