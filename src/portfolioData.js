@@ -35,130 +35,67 @@ import Calc1Thumb from './images/Calc1-Thumb.jpg'
 const Data = [
     {
         title: 'Aghanim\'s Pathfinders Guides',
-        images: [
-            {
-                original: Aghs1,
-                thumbnail: Aghs1Thumb,
-                originalClass: 'aghs-images',
-            },
-            {
-                original: Aghs2,
-                thumbnail: Aghs2Thumb,
-                originalClass: 'aghs-images',
-            },
-            {
-                original: Aghs3,
-                thumbnail: Aghs3Thumb,
-                originalClass: 'aghs-images',
-            },
-            {
-                original: Aghs4,
-                thumbnail: Aghs4Thumb,
-                originalClass: 'aghs-images',
-            },
-            {
-                original: Aghs5,
-                thumbnail: Aghs5Thumb,
-                originalClass: 'aghs-images',
-            },
-            {
-                original: Aghs6,
-                thumbnail: Aghs6Thumb,
-                originalClass: 'aghs-images',
-            }
+        image: Aghs1,
+        text: [
+            'A website for a popular mod for Dota 2, Aghanim’s Pathfinders.',
+            'The site hosts player-made guides, showcases recent victories and displays a wide range of statistics on the mod\'s heroes',
+            'The website features: ',
+            ['Hover elements', 'Live stats from the game\'s server', 'Complex guide creation page', 'Detailed post-game screens'],
+            'Tech stack:',
+            ['React', 'Node.js', 'GraphQL', 'MongoDB', 'CSS3']
         ],
-        text: 'A website for a popular mod for Dota 2, Aghanim’s Pathfinders. The mod re-adds a PvE mode\
-        the game featured recently; the site hosts guides for the various heroes, covering itemisation, \
-        levelling and shards (permanent upgrades for your hero). The website was created with React and \
-        styled with CSS3. The backend is powered by Node.JS and GraphQL and the data is hosted on MongoDB. \
-        As this is a recent creation of mine, many heroes are missing guides at the moment.',
         live: 'https://aghs-pathfinder-guides.herokuapp.com/',
         source: 'https://github.com/Mick666/aghs-pathfinders-guides',
     },
     {
         title: 'Mediaportal Improvements',
-        images: [
-            {
-                original: MP4,
-                thumbnail: MP4Thumb,
-                originalClass: 'mpimp-images',
-            },
-            {
-                original: MP5,
-                thumbnail: MP5Thumb,
-                originalClass: 'mpimp-images',
-            },
-            {
-                original: MP1,
-                thumbnail: MP1Thumb,
-                originalClass: 'mpimp-images',
-            },
-            {
-                original: MP2,
-                thumbnail: MP2Thumb,
-                originalClass: 'mpimp-images',
-            },
-            {
-                original: MP3,
-                thumbnail: MP3Thumb,
-                originalClass: 'mpimp-images',
-            }
-        ],
-        text: 'A Chrome extension I created to assist with creating Daily Briefings while at iSentia. \
+        image: MP4,
+        text: ['A Chrome extension I created to assist with creating Daily Briefings while at iSentia. \
             The extension fixes several issues my colleagues had with the site we used, Mediaportal,\
             and added several time saving features.\n The extension now has more than 30 users across three\
             teams and has been used in conjunction with the Mediaportal developers to eliminate an ongoing\
-            bug we were experiencing.\n',
+            bug we were experiencing.\n'],
         live: 'https://chrome.google.com/webstore/detail/mp-improvements/fehdcpnecldplanhfcmhcanpagpmljmo',
         source: 'https://github.com/Mick666/Media-Plugin'
     },
     {
         title: 'Summary Linker',
-        images: [
-            {
-                original: Linker1,
-                thumbnail: Linker1Thumb
-            },
-            {
-                original: Linker2,
-                thumbnail: Linker2Thumb
-            }
-        ],
-        text: 'A website designed to assist with linking news summaries when using our online editing tool.\
-        Created with React.',
+        image: Linker1,
+        text: ['A website designed to assist with linking news summaries when using our online editing tool.\
+        Created with React.'],
         live: 'https://mick666.github.io/Summs-Linker-Redux/',
         source: 'https://github.com/Mick666/Summs-Linker-Redux'
     },
-    {
-        title: 'Programming commands',
-        images: [
-            {
-                original: Commands1,
-                thumbnail: Commands1Thumb
-            },
-            {
-                original: Commands2,
-                thumbnail: Commands2Thumb
-            }
-        ],
-        text: 'A React website I created to list the common npm packages for various JS libraries, as well as other \
-        command lines I infrequently need. Powered by Node on the server side, which stores the various commands \
-        and their contexts',
-        live: 'https://warm-chamber-58678.herokuapp.com/',
-        source: 'https://github.com/Mick666/Commands-Frontend'
-    },
-    {
-        title: 'Calculator',
-        images: [
-            {
-                original: Calc1,
-                thumbnail: Calc1Thumb
-            }
-        ],
-        text: 'A simple calculator created with vanilla JS',
-        live: 'https://mick666.github.io/calculatorProject/',
-        source: 'https://github.com/Mick666/calculatorProject'
-    }
+    // {
+    //     title: 'Programming commands',
+    //     images: [
+    //         {
+    //             original: Commands1,
+    //             thumbnail: Commands1Thumb
+    //         },
+    //         {
+    //             original: Commands2,
+    //             thumbnail: Commands2Thumb
+    //         }
+    //     ],
+    //     text: 'A React website I created to list the common npm packages for various JS libraries, as well as other \
+    //     command lines I infrequently need. Powered by Node on the server side, which stores the various commands \
+    //     and their contexts',
+    //     live: 'https://warm-chamber-58678.herokuapp.com/',
+    //     source: 'https://github.com/Mick666/Commands-Frontend'
+    // },
+    // {
+    //     title: 'Calculator',
+    //     images: [
+    //         {
+    //             original: Calc1,
+    //             thumbnail: Calc1Thumb
+    //         }
+    //     ],
+    //     text: 'A simple calculator created with vanilla JS',
+    //     live: 'https://mick666.github.io/calculatorProject/',
+    //     source: 'https://github.com/Mick666/calculatorProject'
+    // }
 ]
 
 export default Data

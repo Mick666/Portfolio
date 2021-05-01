@@ -1,15 +1,8 @@
 import React from 'react'
-import ImageGallery from 'react-image-gallery'
 import { Typography, Link } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
-    textSection: {
-        flexGrow: 1,
-        backgroundColor: theme.palette.background.default,
-        padding: theme.spacing(3),
-        marginTop: '25px'
-    },
     projectLinks: {
         fontFamily: 'Roboto',
         textAlign: 'center',
@@ -24,8 +17,22 @@ const PortfolioItem = ({ item }) => {
     return (
         <div className='portfolio-item'>
             <h1>{item.title}</h1>
-            <ImageGallery items={item.images} additionalClass='testing' />
-            <Typography className={classes.textSection}>{item.text}</Typography>
+            <a href={item.live}>
+                <img className='portfolio-image' src={item.image} />
+            </a>
+            <div className='portfolio-description'>
+                {item.text.map(para => {
+                    if (typeof para === 'string') {
+                        return <span>{para}</span>
+                    } else {
+                        return (
+                            <ul>
+                                {para.map((dotpoint, liKey) => <li key={liKey}>{dotpoint}</li>)}
+                            </ul>
+                        )
+                    }
+                })}
+            </div>
             <div className='portfolio-links'>
                 <Link href={item.live} className={classes.projectLinks}>Live</Link>&nbsp;|&nbsp;
                 <Link href={item.source} className={classes.projectLinks}>Source</Link>

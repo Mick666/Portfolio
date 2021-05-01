@@ -8,11 +8,38 @@
 
 .portfolio-items-parent {
   margin: 0px auto;
-  width: 75vh;
+  width: 50%;
+}
+
+.portfolio-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  font-size: 1rem;
+}
+
+.portfolio-description span {
+  text-align: justify;
+  padding-bottom: 5px;;
+}
+
+.portfolio-description ul {
+  text-align: justify;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .portfolio-item {
-  margin-bottom: 75px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-image {
+  width: 800px;
+  height: 700px;
 }
 
 div.mpimp-images div img{
